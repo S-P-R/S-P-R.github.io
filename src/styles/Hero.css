@@ -1,0 +1,40 @@
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    margin: 10rem;
+    margin-top: 6rem;
+    position: sticky;
+    top: 7rem; /* Slight increase over top-margin gets rid of small stutter when starting to scroll */
+    align-self: flex-start; /* Necessary for sticky positioning to work */
+}
+
+.name {
+    white-space: nowrap;
+    transition: text-shadow 0.3s ease, transform 0.3s ease;
+    font-size: 5rem;
+}
+
+.name:hover {
+    transform: scale(1.05);
+    text-shadow: 3px 3px 6px rgba(123, 123, 123);
+}
+
+.external-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+.external-links > * {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.75;
+    padding-right: 3rem; 
+}
+
+.external-links > *:hover {
+    padding-right: 3rem; 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: scale(1.15);
+    opacity: 1;
+}

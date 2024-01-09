@@ -1,0 +1,16 @@
+.app-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 10rem;
+    margin-top: 8rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
