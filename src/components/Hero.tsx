@@ -11,17 +11,17 @@ import emailWhite from '../assets/email-white.png'
  */
 export default function HeroSection (){
     return (
-        <div className='hero-text'>
+        <div>
             <h1 className='name'> <span className='first-name'>Sean</span> <span className='last-name'>Reilly</span> </h1>
             <div className='external-links'>
                 <a href="https://github.com/S-P-R" target="_blank" rel="noopener noreferrer">
-                    <img src={githubLogoWhite} alt="Github Logo" style={{ width: 50, height: 50 }} />
+                    <img className="icon" src={githubLogoWhite} alt="Github Logo" />
                 </a>
                 <a href="https://www.linkedin.com/in/sean-reilly-301176225/" target="_blank" rel="noopener noreferrer">
-                    <img src={linkedinLogoWhite} alt="Linkedin Logo" style={{ width: 50, height: 50 }} />
+                    <img className="icon" src={linkedinLogoWhite} alt="Linkedin Logo"  />
                 </a>
                 <a href="mailto:Sean.Reilly@tufts.edu" target="_blank" rel="noopener noreferrer">
-                    <img src={emailWhite} alt="Email Logo" style={{ width: 50, height: 50 }} />
+                    <img className="icon" src={emailWhite} alt="Email Logo"  />
                 </a>
             </div>
         </div>

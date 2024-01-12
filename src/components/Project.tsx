@@ -27,7 +27,9 @@ export default function Project ({name, description, shouldDim, onMouseEnter, on
                 <h3 className="project-name"> {name} </h3>
                 <div className='project-content'>
                     <p> {description} </p>
-                    <img className="project-image" src={imageURL} alt="Project Screenshot" style={{ width: 360, height: 204 }} />
+                    <div className='image-container'>
+                        <img className="project-image" src={imageURL} alt="Project Screenshot" />
+                    </div>
                 </div>
             </div>
     )

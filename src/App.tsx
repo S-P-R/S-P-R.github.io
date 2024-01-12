@@ -6,7 +6,7 @@ import './styles/App.css'
 /**
  * App
  * 
- * Lays out page contents
+ * Lays out page
  *
  */
 function App() {
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className='app-layout'>
-      <HeroSection/>
+      <div className='hero-section'> <HeroSection/> </div> 
       <div className='main-content'>
         <h3> Hello! &#128075; </h3>
         <p> I’m Sean, a fourth-year student at Tufts University &#128024; pursuing a Bachelor’s 

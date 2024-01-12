@@ -2,5 +2,18 @@
   background-color: #000000;
   color: rgb(255, 255, 255);
   font-family: 'League Spartan', sans-serif;
-  font-size: 100%;
+  /* font-size: calc(1rem + 1vw); */
+  font-size: clamp(1rem, 2vw + .25rem, 2rem);
+  font-size: clamp(1rem, 1.10vw + .545rem, 2rem);
+  /* font-size: 2.25rem */
+  /* font-size: 100%; */
 }
+
+/* img {
+  height: 100%;
+  width: auto;
+
+  border-style: solid;
+  border-radius: 10px;
+  border-color: aqua;
+} */

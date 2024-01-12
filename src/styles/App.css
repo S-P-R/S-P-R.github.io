@@ -1,16 +1,46 @@
-.app-layout {
+.hero-section {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+    flex-direction: column;
+    margin: 4rem;
+    margin-top: 2.4rem;
+    margin-bottom: .25rem;
 }
 
 .main-content {
+    font-size: .85rem;
     display: flex;
     flex-direction: column;
-    
-    margin: 10rem;
-    margin-top: 8rem;
-    font-size: 1.5rem;
+    margin: 4rem;
+    margin-top: 2.5rem;
     line-height: 1.5;
+}
+
+@media screen and (min-width: 1080px) {
+    .app-layout {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .hero-section {
+        margin: 4rem;
+        margin-top: 2.4rem;
+        position: sticky;
+        top: 2.8rem; /* Slight increase over top-margin gets rid of small stutter when starting to scroll */
+        align-self: flex-start; /* Necessary for sticky positioning to work */
+    }
+
+    .main-content {
+        margin-top: 3.2rem
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .app-layout {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
 }
