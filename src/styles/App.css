@@ -4,6 +4,7 @@
     margin: 4rem;
     margin-top: 2.4rem;
     margin-bottom: .25rem;
+    align-self: flex-start; 
 }
 
 .main-content {
@@ -24,11 +25,8 @@
     }
 
     .hero-section {
-        margin: 4rem;
-        margin-top: 2.4rem;
         position: sticky;
         top: 2.8rem; /* Slight increase over top-margin gets rid of small stutter when starting to scroll */
-        align-self: flex-start; /* Necessary for sticky positioning to work */
     }
 
     .main-content {
