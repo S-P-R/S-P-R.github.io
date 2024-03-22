@@ -1,13 +1,18 @@
 .project {
     display: flex;
     flex-direction: column;
-    border-color: #000000;
     border-radius: 40px;
+    /* 
+     * alpha channel of 0 makes border invisible, border is defined on .project
+     * despite being made invisible because border padding means that if the 
+     * border only appears when projects are hovered over then projects
+     * will appear to shift slightly when hovered over 
+     */
+    border-color: rgba(0, 0, 0, 0);
     border-style: solid;
     border-width: .2rem;
     padding: .4rem;
     transition: background-color .5s ease, border-color .3s ease;
-    color: inherit;
     text-decoration: none;
 }
 
@@ -16,9 +21,22 @@
     opacity: 50%;
 }
 
+[data-color-scheme='dark'] {
+    --hover-border-color: rgb(10, 10, 10); 
+    --hover-background-color: rgb(15, 15, 15);
+  }
+  
+  [data-color-scheme='light'] {
+    --hover-border-color: rgb(245, 245, 245); 
+    --hover-background-color: rgb(240, 240, 240);
+  }
+
 .project:hover {
-    border-color:rgb(10, 10, 10); 
-    background-color: rgb(15, 15, 15);
+    border-style: solid;
+    border-width: .2rem;
+    padding: .4rem;
+    border-color: var(--hover-border-color);
+    background-color: var(--hover-background-color);
 }
 
 .project-name {
@@ -40,7 +58,7 @@
 }
 
 .project-image {
-    border-color: #232323;
+    border-color: rgb(127, 127, 127);
     border-radius: 5px;
     border-style: solid;
     border-width: .1rem;

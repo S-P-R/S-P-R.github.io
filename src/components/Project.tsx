@@ -1,4 +1,7 @@
 import '../styles/Project.css'
+import { ColorSchemeContext } from '../contexts/ColorSchemeContext.tsx';
+import { useContext } from 'react';
+
 
 type ProjectProps = Readonly<{
     name: string;
@@ -21,9 +24,12 @@ type ProjectProps = Readonly<{
  * - 'onMouseLeave' - funtion to call when mouse leaves component area
  */
 export default function Project ({name, description, shouldDim, onMouseEnter, onMouseLeave} : ProjectProps) {
+    const { schemeName } = useContext(ColorSchemeContext);
+
     const imageURL = new URL(`../assets/${name}.png`, import.meta.url).href
+    console.log('Name: ', schemeName)
     return (
-            <div className={`project ${shouldDim ? 'dimmed' : ''}`} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+            <div data-color-scheme={schemeName} className={`project ${shouldDim ? 'dimmed' : ''}`} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
                 <h3 className="project-name"> {name} </h3>
                 <div className='project-content'>
                     <p> {description} </p>

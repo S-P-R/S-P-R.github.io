@@ -16,8 +16,8 @@ function App() {
     <div className='app-layout'>
       <div className='hero-section'> <HeroSection/> </div> 
       <div className='main-content'>
-        <h3> Hello! &#128075; </h3>
-        <p> I’m Sean, a fourth-year student at Tufts University &#128024; pursuing a Bachelor’s 
+        <h3> Hello! &#128075;{/* waving hand emoji */} </h3> 
+        <p> I’m Sean, a fourth-year student at Tufts University &#128024;{/* elephant emoji */} pursuing a Bachelor’s
             in Computer Science. Currently looking for a new grad software 
             engineering role. </p>
         <h2> Projects</h2>
