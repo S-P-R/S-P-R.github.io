@@ -20,6 +20,7 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
     opacity: 0.75;
     padding-right: 1.2rem; 
+    width: 1.75rem;
 }
 
 .external-links > *:hover {
