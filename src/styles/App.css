@@ -21,6 +21,10 @@
     line-height: 1.5;
 }
 
+.elephant-emoji {
+    font-size: 1.1rem;
+}
+
 @media screen and (min-width: 1080px) {
     .content-layout {
         display: flex;

@@ -1,0 +1,28 @@
+
+[data-color-scheme='dark'] {
+    --tag-hover-background-color: rgb(30, 30, 30);
+
+  }
+  
+  [data-color-scheme='light'] {
+    --tag-hover-background-color: rgb(225, 225, 225);
+  }
+
+.skill-tag {
+    display: inline-flex; 
+    justify-content: center;
+    border-color: rgb(127, 127, 127);
+    border-width: .08rem;
+    border-radius: .5rem;
+    min-width: 1.5rem;
+    border-style: solid;
+    padding: .2rem;
+    margin: .25rem;
+    
+    transition: transform 0.25s ease, background-color .25s ease;
+}
+
+.skill-tag:hover {
+    transform: scale(1.05);
+    background-color: var(--tag-hover-background-color);
+}
