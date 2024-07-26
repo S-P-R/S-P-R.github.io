@@ -1,3 +1,12 @@
+a {
+    /* 
+     * These declarations ensure that project card text (name & description) 
+     * don't look like a link
+     */
+    color: inherit; 
+    text-decoration: inherit;
+}
+
 .project {
     display: flex;
     flex-direction: column;
@@ -22,21 +31,21 @@
 }
 
 [data-color-scheme='dark'] {
-    --hover-border-color: rgb(10, 10, 10); 
-    --hover-background-color: rgb(15, 15, 15);
+    --project-hover-border-color: rgb(10, 10, 10); 
+    --project-hover-background-color: rgb(15, 15, 15);
   }
   
   [data-color-scheme='light'] {
-    --hover-border-color: rgb(245, 245, 245); 
-    --hover-background-color: rgb(240, 240, 240);
+    --project-hover-border-color: rgb(245, 245, 245); 
+    --project-hover-background-color: rgb(240, 240, 240);
   }
 
 .project:hover {
     border-style: solid;
     border-width: .2rem;
     padding: .4rem;
-    border-color: var(--hover-border-color);
-    background-color: var(--hover-background-color);
+    border-color: var(--project-hover-border-color);
+    background-color: var(--project-hover-background-color);
 }
 
 .project-name {
