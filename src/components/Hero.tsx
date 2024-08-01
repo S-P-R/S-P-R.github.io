@@ -33,7 +33,7 @@ export default function HeroSection (){
                 <a href="https://www.linkedin.com/in/sean-reilly-301176225/" target="_blank" rel="noopener noreferrer">
                     <img className="icon" src={linkedinLogo} alt="Linkedin Logo"  />
                 </a>
-                <a href="mailto:Sean.Reilly@tufts.edu" target="_blank" rel="noopener noreferrer">
+                <a href="mailto:sean-p-reilly@outlook.com" target="_blank" rel="noopener noreferrer">
                     <img className="icon" src={emailLogo} alt="Email Logo"  />
                 </a>
             </div>
