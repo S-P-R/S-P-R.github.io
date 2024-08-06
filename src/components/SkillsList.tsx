@@ -12,7 +12,7 @@ export default function SkillsList() {
     const { schemeName } = useContext(ColorSchemeContext);
 
     const languages = ["Python", "Typescript", "C", "C++", "OCaml"]
-    const technologies = ["SQL", "MongoDB", "React", "Flask", "Terraform", "Docker", "Git"]
+    const technologies = ["SQL", "MongoDB", "React", "Node.js", "Flask", "FastAPI", "Terraform", "Docker", "Git"]
 
     return (
     <div>
