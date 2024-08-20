@@ -4,19 +4,18 @@
 }
 
 .hero-section {
-    flex-direction: column;
     margin: 4rem;
     margin-top: 2.4rem;
-    margin-bottom: .25rem;
-    align-self: flex-start; 
+    margin-bottom: 0.25rem;
+    align-self: flex-start;
 }
 
 .main-content {
-    font-size: .85rem;
+    font-size: 0.85rem;
     display: flex;
     flex-direction: column;
     margin: 4rem;
-    margin-right: .25rem;
+    margin-right: 0.25rem;
     margin-top: 2.5rem;
     line-height: 1.5;
 }
@@ -39,7 +38,7 @@
     }
 
     .main-content {
-        margin-top: 3.2rem
+        margin-top: 3.2rem;
     }
 }
 

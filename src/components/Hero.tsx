@@ -18,7 +18,6 @@ import emailBlack from '../assets/email-black.png'
  */
 export default function HeroSection (){
     const { schemeName } = useContext(ColorSchemeContext);
-
     const githubLogo = schemeName === 'light' ? githubLogoBlack : githubLogoWhite;
     const linkedinLogo = schemeName === 'light' ? linkedinLogoBlack : linkedinLogoWhite;
     const emailLogo = schemeName === 'light' ? emailBlack : emailWhite;
